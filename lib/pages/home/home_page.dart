@@ -8,6 +8,7 @@ enum PopupMenuPages {
   botoesRotacaoTexto,
   singleChildScrollView,
   listView,
+  dialogs,
 }
 
 class HomePage extends StatelessWidget {
@@ -43,6 +44,9 @@ class HomePage extends StatelessWidget {
                 case PopupMenuPages.listView:
                   Navigator.of(context).pushNamed('/scroll/list_view');
                   break;
+                case PopupMenuPages.dialogs:
+                  Navigator.of(context).pushNamed('/dialogs');
+                  break;
               }
             },
             itemBuilder: (BuildContext context) {
@@ -74,6 +78,9 @@ class HomePage extends StatelessWidget {
                 const PopupMenuItem<PopupMenuPages>(
                   value: PopupMenuPages.listView,
                   child: Text('List View'),
+                ), const PopupMenuItem<PopupMenuPages>(
+                  value: PopupMenuPages.dialogs,
+                  child: Text('Dialogs'),
                 ),
               ];
             },
