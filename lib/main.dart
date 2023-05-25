@@ -5,6 +5,8 @@ import 'package:study/pages/botoes_rotacao_texto/botoes_rotacao_texto_page.dart'
 import 'package:study/pages/containers/container_page.dart';
 import 'package:study/pages/layout_builder/layout_builder_page.dart';
 import 'package:study/pages/media_query/media_query_page.dart';
+import 'package:study/pages/scrolls/list_view_page.dart';
+import 'package:study/pages/scrolls/single_child_scroll_view_page.dart';
 
 import 'pages/home/home_page.dart';
 import 'pages/rows_columns/row_column_page.dart';
@@ -36,6 +38,8 @@ class MyApp extends StatelessWidget {
         '/media_query': (_) => const MediaQueryPage(),
         '/layout_builder': (_) => const LayoutBuilderPage(),
         '/botoes_rotacao_texto': (_) => const BotoesRotacaoTextoPage(),
+        '/scroll/single_child': (_) => const SingleChildScrollViewPage(),
+        '/scroll/list_view': (_) => const ListViewPage(),
         
       },
     );

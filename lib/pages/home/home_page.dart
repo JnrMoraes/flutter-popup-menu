@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 
 enum PopupMenuPages {
   container,
-  row_columns,
-  media_query,
-  layout_builder,
-  botoes_rotacao_texto,
+  rowColumns,
+  mediaQuery,
+  layoutBuilder,
+  botoesRotacaoTexto,
+  singleChildScrollView,
+  listView,
 }
 
 class HomePage extends StatelessWidget {
@@ -23,17 +25,23 @@ class HomePage extends StatelessWidget {
                 case PopupMenuPages.container:
                   Navigator.of(context).pushNamed('/container');
                   break;
-                case PopupMenuPages.row_columns:
+                case PopupMenuPages.rowColumns:
                   Navigator.of(context).pushNamed('/rows_columns');
                   break;
-                case PopupMenuPages.media_query:
+                case PopupMenuPages.mediaQuery:
                   Navigator.of(context).pushNamed('/media_query');
                   break;
-                case PopupMenuPages.layout_builder:
+                case PopupMenuPages.layoutBuilder:
                   Navigator.of(context).pushNamed('/layout_builder');
                   break;
-                case PopupMenuPages.botoes_rotacao_texto:
+                case PopupMenuPages.botoesRotacaoTexto:
                   Navigator.of(context).pushNamed('/botoes_rotacao_texto');
+                  break;
+                case PopupMenuPages.singleChildScrollView:
+                  Navigator.of(context).pushNamed('/scroll/single_child');
+                  break;
+                case PopupMenuPages.listView:
+                  Navigator.of(context).pushNamed('/scroll/list_view');
                   break;
               }
             },
@@ -44,20 +52,28 @@ class HomePage extends StatelessWidget {
                   child: Text('Container'),
                 ),
                 const PopupMenuItem<PopupMenuPages>(
-                  value: PopupMenuPages.row_columns,
+                  value: PopupMenuPages.rowColumns,
                   child: Text('Rowns & Columns'),
                 ),
                 const PopupMenuItem<PopupMenuPages>(
-                  value: PopupMenuPages.media_query,
+                  value: PopupMenuPages.mediaQuery,
                   child: Text('Media Query'),
                 ),
                 const PopupMenuItem<PopupMenuPages>(
-                  value: PopupMenuPages.layout_builder,
+                  value: PopupMenuPages.layoutBuilder,
                   child: Text('Layout Builder'),
                 ),
                 const PopupMenuItem<PopupMenuPages>(
-                  value: PopupMenuPages.botoes_rotacao_texto,
+                  value: PopupMenuPages.botoesRotacaoTexto,
                   child: Text('Botões Rotação Texto'),
+                ),
+                const PopupMenuItem<PopupMenuPages>(
+                  value: PopupMenuPages.singleChildScrollView,
+                  child: Text('Scroll SingleChild'),
+                ),
+                const PopupMenuItem<PopupMenuPages>(
+                  value: PopupMenuPages.listView,
+                  child: Text('List View'),
                 ),
               ];
             },
