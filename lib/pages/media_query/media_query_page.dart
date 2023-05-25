@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 
 class MediaQueryPage extends StatelessWidget {
@@ -12,10 +14,6 @@ class MediaQueryPage extends StatelessWidget {
     print('MINI BAR ABOVE -> ${mediaQuery.padding.top}');
     print('APP BAR without custom -> $kToolbarHeight');
 
-    var appBar = AppBar(
-      title: const Text('Media Query'),
-    );
-
     final statusBar = mediaQuery.padding.top;
     final heightBody = mediaQuery.size.height - statusBar - kToolbarHeight;
 
@@ -25,13 +23,14 @@ class MediaQueryPage extends StatelessWidget {
       ),
       body: Center(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             color: Colors.blueGrey,
             width: mediaQuery.size.width * .50,
             height: heightBody * .5,
-          ), Container(
+          ),
+          Container(
             color: Colors.blueAccent,
             width: mediaQuery.size.width,
             height: heightBody * .5,
