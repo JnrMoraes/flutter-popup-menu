@@ -1,16 +1,17 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:study/pages/botoes_rotacao_texto/botoes_rotacao_texto_page.dart';
-import 'package:study/pages/containers/container_page.dart';
-import 'package:study/pages/layout_builder/layout_builder_page.dart';
-import 'package:study/pages/media_query/media_query_page.dart';
-import 'package:study/pages/scrolls/list_view_page.dart';
-import 'package:study/pages/scrolls/single_child_scroll_view_page.dart';
 
+import 'pages/botoes_rotacao_texto/botoes_rotacao_texto_page.dart';
+import 'pages/cidades/cidades_page.dart';
+import 'pages/containers/container_page.dart';
 import 'pages/dialogs/dialogs_page.dart';
 import 'pages/formulario/formulario_page.dart';
 import 'pages/home/home_page.dart';
+import 'pages/layout_builder/layout_builder_page.dart';
+import 'pages/media_query/media_query_page.dart';
 import 'pages/rows_columns/row_column_page.dart';
+import 'pages/scrolls/list_view_page.dart';
+import 'pages/scrolls/single_child_scroll_view_page.dart';
 import 'pages/snackbar/snackbar_page.dart';
 
 void main() {
@@ -47,6 +48,7 @@ class MyApp extends StatelessWidget {
         '/dialogs': (_) => const DialogsPage(),
         '/snackbar': (_) => const SnackbarPage(),
         '/forms': (_) => const FormularioPage(),
+        '/cidades': (_) => const CidadesPage(),
         
       },
     );

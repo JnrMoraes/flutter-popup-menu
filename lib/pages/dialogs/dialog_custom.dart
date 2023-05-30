@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'dart:io';
 class DialogCustom extends Dialog {
   DialogCustom(BuildContext context, {super.key})
       : super(

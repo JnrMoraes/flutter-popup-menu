@@ -101,6 +101,7 @@ class _FormularioPageState extends State<FormularioPage> {
                       if (value == null || value.isEmpty) {
                         return 'Campo X não preenchido';
                       }
+                      return null;
                     },
                   ),
                 ),
@@ -132,6 +133,7 @@ class _FormularioPageState extends State<FormularioPage> {
                     if (value == null || value.isEmpty) {
                       return 'Campo X não preenchido';
                     }
+                    return null;
                   },
                 ),
                 const SizedBox(height: 20,),
