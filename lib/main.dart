@@ -8,6 +8,7 @@ import 'package:study/pages/scrolls/list_view_page.dart';
 import 'package:study/pages/scrolls/single_child_scroll_view_page.dart';
 
 import 'pages/dialogs/dialogs_page.dart';
+import 'pages/formulario/formulario_page.dart';
 import 'pages/home/home_page.dart';
 import 'pages/rows_columns/row_column_page.dart';
 import 'pages/snackbar/snackbar_page.dart';
@@ -45,6 +46,7 @@ class MyApp extends StatelessWidget {
         '/scroll/list_view': (_) => const ListViewPage(),
         '/dialogs': (_) => const DialogsPage(),
         '/snackbar': (_) => const SnackbarPage(),
+        '/forms': (_) => const FormularioPage(),
         
       },
     );
