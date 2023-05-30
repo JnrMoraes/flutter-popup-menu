@@ -13,6 +13,7 @@ import 'pages/rows_columns/row_column_page.dart';
 import 'pages/scrolls/list_view_page.dart';
 import 'pages/scrolls/single_child_scroll_view_page.dart';
 import 'pages/snackbar/snackbar_page.dart';
+import 'pages/stack/stack_page.dart';
 
 void main() {
   runApp(DevicePreview(
@@ -49,6 +50,7 @@ class MyApp extends StatelessWidget {
         '/snackbar': (_) => const SnackbarPage(),
         '/forms': (_) => const FormularioPage(),
         '/cidades': (_) => const CidadesPage(),
+        '/stack': (_) => const StackPage(),
         
       },
     );
