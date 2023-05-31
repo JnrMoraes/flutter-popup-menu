@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'pages/botoes_rotacao_texto/botoes_rotacao_texto_page.dart';
 import 'pages/bottom_navigator_bar/bottom_navigator_bar_page.dart';
 import 'pages/cidades/cidades_page.dart';
+import 'pages/circle_avatar/circle_avatar_page.dart';
 import 'pages/containers/container_page.dart';
 import 'pages/dialogs/dialogs_page.dart';
 import 'pages/formulario/formulario_page.dart';
@@ -54,6 +55,7 @@ class MyApp extends StatelessWidget {
         '/stack': (_) => const StackPage(),
         '/stack/page2': (_) => const Stack2Page(),
         '/bottom_navigator_bar': (_) => const BottomNavigatorBarPage(),
+        '/circle_avatar': (_) => const CircleAvatarPage(),
       },
     );
   }

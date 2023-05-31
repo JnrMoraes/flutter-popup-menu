@@ -14,7 +14,8 @@ enum PopupMenuPages {
   cidades,
   stack,
   stack2,
-  bottom_navigator,
+  bottomNavigator,
+  circleAvatar,
 }
 
 class HomePage extends StatelessWidget {
@@ -68,11 +69,11 @@ class HomePage extends StatelessWidget {
                 case PopupMenuPages.stack2:
                   Navigator.of(context).pushNamed('/stack/page2');
                   break;
-                case PopupMenuPages.stack:
-                  Navigator.of(context).pushNamed('/stack');
-                  break;
-                case PopupMenuPages.bottom_navigator:
+                case PopupMenuPages.bottomNavigator:
                   Navigator.of(context).pushNamed('/bottom_navigator_bar');
+                  break;
+                case PopupMenuPages.circleAvatar:
+                  Navigator.of(context).pushNamed('/circle_avatar');
                   break;
               }
             },
@@ -131,8 +132,11 @@ class HomePage extends StatelessWidget {
                   child: Text('Stack 2'),
                 ),
                 const PopupMenuItem<PopupMenuPages>(
-                  value: PopupMenuPages.bottom_navigator,
+                  value: PopupMenuPages.bottomNavigator,
                   child: Text('Bottom Navigator Bar'),
+                ),const PopupMenuItem<PopupMenuPages>(
+                  value: PopupMenuPages.circleAvatar,
+                  child: Text('Circle Avatar'),
                 ),
               ];
             },
