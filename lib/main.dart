@@ -11,6 +11,7 @@ import 'pages/dialogs/dialogs_page.dart';
 import 'pages/formulario/formulario_page.dart';
 import 'pages/home/home_page.dart';
 import 'pages/layout_builder/layout_builder_page.dart';
+import 'pages/material_banner/material_banner_page.dart';
 import 'pages/media_query/media_query_page.dart';
 import 'pages/rows_columns/row_column_page.dart';
 import 'pages/scrolls/list_view_page.dart';
@@ -58,6 +59,7 @@ class MyApp extends StatelessWidget {
         '/bottom_navigator_bar': (_) => const BottomNavigatorBarPage(),
         '/circle_avatar': (_) => const CircleAvatarPage(),
         '/colors': (_) => const ColorsPage(),
+        '/material_banner': (_) => const MaterialBannerPage(),
       },
     );
   }
