@@ -2,6 +2,7 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 
 import 'pages/botoes_rotacao_texto/botoes_rotacao_texto_page.dart';
+import 'pages/bottom_navigator_bar/bottom_navigator_bar_page.dart';
 import 'pages/cidades/cidades_page.dart';
 import 'pages/containers/container_page.dart';
 import 'pages/dialogs/dialogs_page.dart';
@@ -37,7 +38,6 @@ class MyApp extends StatelessWidget {
       useInheritedMediaQuery: true,
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
-      
       routes: {
         '/': (_) => const HomePage(),
         '/container': (_) => const ContainerPage(),
@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
         '/cidades': (_) => const CidadesPage(),
         '/stack': (_) => const StackPage(),
         '/stack/page2': (_) => const Stack2Page(),
-        
+        '/bottom_navigator_bar': (_) => const BottomNavigatorBarPage(),
       },
     );
   }
